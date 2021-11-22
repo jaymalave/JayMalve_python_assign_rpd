@@ -24,27 +24,26 @@ myScreenButton = browser.find_element(By.XPATH, '/html/body/main/section/div/div
 myScreenButton.click()
 sleep(3)
 
-loginRef = browser.find_element_by_xpath('/html/body/main/section/div/div[8]/section/div/div/div/section[1]/form/div[1]/input')
+loginRef = browser.find_element(By.XPATH, '/html/body/main/section/div/div[8]/section/div/div/div/section[1]/form/div[1]/input')
 loginRef.send_keys(login_id)
-passWordRef = browser.find_element_by_xpath('/html/body/main/section/div/div[8]/section/div/div/div/section[1]/form/div[2]/input')
+passWordRef = browser.find_element(By.XPATH, '/html/body/main/section/div/div[8]/section/div/div/div/section[1]/form/div[2]/input')
 passWordRef.send_keys(password)
 
-signInButton = browser.find_element_by_xpath('/html/body/main/section/div/div[8]/section/div/div/div/section[1]/form/button')
+signInButton = browser.find_element(By.XPATH, '/html/body/main/section/div/div[8]/section/div/div/div/section[1]/form/button')
 signInButton.click()
 sleep(5)
 
-runButton = browser.find_element_by_xpath('/html/body/main/section/div/div[6]/section/div/div/div/div/table/tbody/tr/td[3]/a[1]')
+runButton = browser.find_element(By.XPATH, '/html/body/main/section/div/div[6]/section/div/div/div/div/table/tbody/tr/td[3]/a[1]')
 runButton.click()
 sleep(2)
 
-selectAllTickers = browser.find_element_by_xpath('/html/body/main/section/div/div[4]/div/div[1]/div[2]/div[1]/div/div[2]/div[2]/div[1]/div/table/thead/tr/th[1]/input')
+selectAllTickers = browser.find_element(By.XPATH, '/html/body/main/section/div/div[4]/div/div[1]/div[2]/div[1]/div/div[2]/div[2]/div[1]/div/table/thead/tr/th[1]/input')
 selectAllTickers.click()
 sleep(5)
 
-csvButton = browser.find_element_by_xpath('/html/body/main/section/div/div[4]/div/div[1]/div[2]/div[1]/div/div[1]/a[1]')
+csvButton = browser.find_element(By.XPATH, '/html/body/main/section/div/div[4]/div/div[1]/div[2]/div[1]/div/div[1]/a[1]')
 csvButton.click()
 
-print("done")
 
 
 

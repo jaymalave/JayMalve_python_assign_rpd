@@ -25,16 +25,16 @@ print(ticker_list)
 for ticker in ticker_list:
     browser.refresh()
     sleep(20)
-    searchRef = browser.find_element_by_css_selector('#ticker')
+    searchRef = browser.find_element(By.CSS_SELECTOR, '#ticker')
     searchRef.send_keys(ticker.upper())
     searchRef.submit()
     sleep(3)
 
-    table = browser.find_element_by_css_selector("#etf_holding_table")
+    table = browser.find_element(By.CSS_SELECTOR, "#etf_holding_table")
     with open(ticker + '.csv', 'w', newline='') as csvfile:
         wr = csv.writer(csvfile)
-        for row in table.find_elements_by_css_selector('tr'):
-            wr.writerow([d.text for d in row.find_elements_by_css_selector('td')])
+        for row in table.find_elements(By.CSS_SELECTOR, 'tr'):
+            wr.writerow([d.text for d in row.find_elements(By.CSS_SELECTOR, 'td')])
     
 
 

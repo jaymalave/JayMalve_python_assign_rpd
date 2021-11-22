@@ -11,7 +11,7 @@
 
 ### 3.Replace the chromedriver in the code with the local machine's chromedriver
 
-```chromedriver =  '[PATH_TO_LOCAL_CHROMEDRIVER]```
+```chromedriver =  '[PATH_TO_LOCAL_CHROMEDRIVER]'```
 
 ### 4.Navigate into the task directories and run the script
 #### For task 1:
